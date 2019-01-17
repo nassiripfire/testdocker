@@ -1,0 +1,23 @@
+Build Your IPFIRE ROUTER in A pc fully Dockerize
+
+To configure the router please read how to a router works. 
+there is a port for wan connection and another port for lan, wan or multiple lan port, DMZ connection for webserver.
+docker takes bridge network but for router we will connect host interface to router with out using bridge 
+I have tested docker in my local pc with two interface. and same driver and interface ip set to settings file.
+please check the file and change it to as per your network connection 
+check your pc also stop all services like a fresh install os with docker only 
+1st clone from github https://github.com/webdevwdc/wtsipfire
+2nd insert to the folder wtsipfire 
+3rd just run the script boottimerun.sh (/bin/bash boottimerun.sh)
+4th check the process container by applying this command docker ps -all
+5th insert to the docker docker exec -i -t CONTAINERID  /bin/bash
+6th just run a script got to the / path and apply this command /bin/bash startup.sh 
+7th. check all running port by netstat comannd 
+8th. exit from the conatainer and check again netstat lcoally 
+
+provide connect another port to another computer with your lan and open browser 
+visit the link https://192.168.1.1:444 
+provide username: admin password: admin 
+
+Thank you 
+we are working on it to run time start all 
