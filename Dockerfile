@@ -1,5 +1,6 @@
 #This is ipfire image for ipfire router product
-FROM webskitters/wtsipfire
+#FROM webskitters/wtsipfire
+FROM ipfireimage
 
 MAINTAINER systemadmin@webskitters.com
 #RUN   rm -rf /srv
